@@ -79,6 +79,7 @@ class Character extends FlxSprite
 				skins.set('gfSkin', 'gf');
 				skins.set('3d', 'bf-3d');
 
+				globalOffset = [-30, 220];
 				barColor = FlxColor.fromRGB(168, 120, 60);
 
 				playAnim('idle');
@@ -98,8 +99,8 @@ class Character extends FlxSprite
 					animation.addByPrefix('sing${anim.toUpperCase()}', anim, 24, false);	
 				}
 				loadOffsetFile(curCharacter);
-				
-				globalOffset = [-85, -272];
+
+				globalOffset = [-30, 220];
 				barColor = FlxColor.fromRGB(168, 120, 60);
 
 				playAnim('idle');
@@ -172,7 +173,7 @@ class Character extends FlxSprite
 				
 				skins.set('gfSkin', 'gf-pixel');
 				skins.set('3d', 'bf-3d');
-					
+
 				globalOffset = [-30, 220];
 
 				barColor = FlxColor.fromRGB(168, 120, 60);
